@@ -17,16 +17,18 @@ client = Bot(description="Striker bot by DoctorFoxy", command_prefix="=", pm_hel
 
 @client.event
 async def on_ready():
+	print("======================")
 	print("Bot is ready!")
-	print("----------------------")
+	print("======================")
 	print("Striker is now running.")
-	print("----------------------")
+	print("======================")
 	print("Made by DoctorFoxy.")
 	print("======================")
 	
 @client.event
 async def on_message(message):
-	if message.content == "ping":
+	if message.content.startswith("=ping"):
+		userID = message.author.id
 		await client.send_message(message.channel, "Pong!")
 
 
