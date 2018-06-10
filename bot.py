@@ -4,7 +4,7 @@ from discord.ext import commands
 import asyncio
 
 client = discord.Client()
-client = command.Bot(command_prefix = "=")
+client = commands.Bot(command_prefix = "=")
 
 @client.event
 async def on_ready():
