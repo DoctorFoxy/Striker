@@ -1,12 +1,3 @@
-#______           _            ______              
-#|  _  \         | |           |  ___|             
-#| | | |___   ___| |_ ___  _ __| |_ _____  ___   _ 
-#| | | / _ \ / __| __/ _ \| '__|  _/ _ \ \/ / | | |
-#| |/ / (_) | (__| || (_) | |  | || (_) >  <| |_| |
-#|___/ \___/ \___|\__\___/|_|  \_| \___/_/\_\\__, |
-#                                             __/ |
-#                                            |___/ 
-
 import discord 
 from discord.ext.commands import Bot
 from discord.ext import commands
@@ -21,8 +12,6 @@ async def on_ready():
 	print("Bot is ready!")
 	print("======================")
 	print("Striker is now running.")
-	print("======================")
-	print("Made by DoctorFoxy.")
 	print("======================")
 	
 @client.event
